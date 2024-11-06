@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="MyProjectRules">
+  <description>PHPCS rules for MyProject.</description>
+  
+  <!-- Include the standard you want to use -->
+  <rule ref="PSR12"/>
+  
+  <!-- Add any directories or files you want to exclude -->
+  <exclude-pattern>/vendor/*</exclude-pattern>
+  
+
+</ruleset>
