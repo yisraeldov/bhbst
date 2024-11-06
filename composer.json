@@ -5,12 +5,18 @@
         "phpunit/phpunit": "^11.4",
         "phpstan/phpstan": "^1.12",
         "phpstan/phpstan-phpunit": "^1.4",
-        "phpcsstandards/phpcsutils": "^1.0"
+        "phpcsstandards/phpcsutils": "^1.0",
+        "psalm/phar": "^5.26"
     },
     "autoload": {
         "psr-4": {
-            "Yisraeldov\\Bhbsd\\": "src/"
+            "Bhbsd\\": "src/"
         }
+    },
+    "autoload-dev": {
+       "psr-4": {
+           "Bhbsd\\Tests\\": "tests/"
+       }
     },
     "authors": [
         {
