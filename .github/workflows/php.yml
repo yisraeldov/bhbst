@@ -17,7 +17,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: 'latest' # or 'latest' or other specific versions
+        tools: composer
 
     - name: Cache Composer packages
       id: composer-cache
@@ -29,10 +33,10 @@ jobs:
           ${{ runner.os }}-php-
 
     - name: Install dependencies
-      run: composer install --prefer-dist --no-progress
+      run: composer install --prefer-dist --no-progress --no-suggest
 
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
+    - name: Run PHP CodeSniffer
+      run: phpcs src
 
     - name: Run test suite
-      run: php-unit  tests
+      run: phpunit tests
