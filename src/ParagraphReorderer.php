@@ -8,10 +8,7 @@ class ParagraphReorderer
     {
         $sentences = $this->splitSentences($inputParagraph);
         $this->sortByLength($sentences);
-        return array_reduce($sentences, function ($acc, $sen) {
-            return $acc . $sen;
-        },
-            "");
+        return implode('', $sentences);
     }
 
     private function splitSentences(string $inputParagraph): array
