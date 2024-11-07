@@ -10,18 +10,27 @@ class ParagraphReordererByLen
      */
     public function reorder(string $inputParagraph): string
     {
-        $sentences = $this->splitSentences($inputParagraph);
-        return implode('', $this->sortByLength($sentences));
+        $sentences = $this->split($inputParagraph);
+        return implode('', $this->sort($sentences));
     }
 
     /**
      * @return array<string>
      */
-    private function splitSentences(string $inputParagraph): array
+    private function split(string $inputParagraph): array
     {
         preg_match_all('/([^.?!]+[.?!]?)/', $inputParagraph, $matches);
         $sentences = $matches[0];
         return $sentences;
+    }
+
+    /**
+     * @param string[] $sentences
+     * @return string[]
+     */
+    public function sort(array $sentences): array
+    {
+        return $this->sortByLength($sentences);
     }
 
     /**
