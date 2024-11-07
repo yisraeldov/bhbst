@@ -18,4 +18,10 @@ class ParagraphReordererCustomAlpahTest extends TestCase
     {
         $this->assertEquals("", $this->sut->reorder(""));
     }
+
+    public function testAbIsAb(): void
+    {
+        $this->assertEquals("a b", $this->sut->reorder("a b"));
+        $this->assertEquals("a b", $this->sut->reorder("b a"));
+    }
 }
