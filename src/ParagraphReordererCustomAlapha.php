@@ -7,9 +7,7 @@ class ParagraphReordererCustomAlapha
     public function reorder(string $string): string
     {
         $sentences = $this->split($string);
-        if (!$sentences) {
-            return $sentences;
-        }
+
         sort($sentences);
         return join(' ', $sentences);
     }
