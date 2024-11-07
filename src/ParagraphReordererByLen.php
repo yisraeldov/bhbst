@@ -2,7 +2,7 @@
 
 namespace Bhbsd;
 
-class ParagraphReordererByLen
+class ParagraphReordererByLen implements ParagraphReorderer
 {
     /**
      * accepts a paragraph and reorders all sentences according to
@@ -41,5 +41,9 @@ class ParagraphReordererByLen
     {
         usort($sentences, fn($a, $b)=> (strlen($a) < strlen($b)) ? -1 : 1);
         return $sentences;
+    }
+
+    public function reoorder(string $paraph): string
+    {
     }
 }
