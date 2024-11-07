@@ -2,7 +2,7 @@
 
 namespace Bhbsd;
 
-class ParagraphReorderer
+class ParagraphReordererByLen
 {
     /**
      * accepts a paragraph and reorders all sentences according to

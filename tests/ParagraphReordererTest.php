@@ -2,16 +2,16 @@
 
 namespace Bhbsd\Tests;
 
-use Bhbsd\ParagraphReorderer;
+use Bhbsd\ParagraphReordererByLen;
 use PHPUnit\Framework\TestCase;
 
 class ParagraphReordererTest extends TestCase
 {
-    private ParagraphReorderer $sut;
+    private ParagraphReordererByLen $sut;
 
     public function setUp(): void
     {
-        $this->sut = new ParagraphReorderer();
+        $this->sut = new ParagraphReordererByLen();
     }
 
     public function testEmptyParagraphReturnsEmpty(): void
