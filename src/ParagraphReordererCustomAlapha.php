@@ -44,7 +44,7 @@ class ParagraphReordererCustomAlapha
      */
     private function split(string $paragraph): array
     {
-        return preg_split('/[ .?!,]+/', $paragraph, -1, PREG_SPLIT_NO_EMPTY);
+        return preg_split('/\W+/', $paragraph, -1, PREG_SPLIT_NO_EMPTY);
     }
 
     /**
