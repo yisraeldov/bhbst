@@ -5,10 +5,7 @@ namespace Bhbsd;
 class ParagraphReordererCustomAlapha
 {
     private $customOrder = [
-        'A' => 'A',
-        'B' => 'B',
         'G' => 'C',
-        'D' => 'D',
         'H' => 'E',
         'V' => 'F',
         'Z' => 'G',
