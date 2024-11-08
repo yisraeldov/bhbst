@@ -60,8 +60,13 @@ class ParagraphReordererCustomAlapha
     public function compare(string $s1, string $s2): int
     {
         return strcmp(
-            strtr(strtoupper($s1), $this->customOrder),
-            strtr(strtoupper($s2), $this->customOrder)
+            $this->transToHebOrderedChars($s1),
+            $this->transToHebOrderedChars($s2)
         );
+    }
+
+    private function transToHebOrderedChars(string $s): string
+    {
+        return strtr(strtoupper($s), $this->replacePairs);
     }
 }
