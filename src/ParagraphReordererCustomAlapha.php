@@ -4,7 +4,11 @@ namespace Bhbsd;
 
 class ParagraphReordererCustomAlapha
 {
-    private $customOrder = [
+    /**
+     * @property
+     * A map ASCII chars to equivalent Hebrew orderd letters
+     */
+    private $replacePairs = [
         'G' => 'C',
         'H' => 'E',
         'V' => 'F',
@@ -29,6 +33,7 @@ class ParagraphReordererCustomAlapha
         'W' => 'Y',
         'X' => 'Z',
       ];
+
 
     public function reorder(string $string): string
     {
