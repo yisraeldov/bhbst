@@ -34,3 +34,9 @@ translate the requirements document from PDF to Markdown for easier
 reading inside of IDE. I also have a plugin that uses LLM to suggest
 commit messages, that was also used. All the code was written with out
 LLMs
+
+# TODO 
+- [ ] Add an API to call the methods
+- [ ] Make a simple UI
+- [ ] Add documentation on how to run server
+- [ ] Add documentation on installing dependecies. 
