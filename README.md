@@ -1,5 +1,31 @@
 [![PHP](https://github.com/yisraeldov/bhbst/actions/workflows/php.yml/badge.svg)](https://github.com/yisraeldov/bhbst/actions/workflows/php.yml)
 
+# Install
+
+## Nix
+
+If you want to use nix you can install [Nix](http://nixos.org) and then run `nix shell`
+
+This will give all the tools and the PHP version that I have installed.
+
+## Composer
+
+If you did not isntall nix, besure that composer is installed then 
+
+``` shell
+composer i
+```
+
+# Run the test server
+
+You can run the test server on port `8080` with
+
+``` shell
+php -S localhost:8080
+```
+
+Then visit the test server <http://localhost:8080>
+
 
 # Provides 2 classes for custom reordering of Paragrahps
 
@@ -39,5 +65,6 @@ LLMs
 - [X] Add an API to call the methods
 - [X] Make a simple UI
  - [ ] Style the UI
-- [ ] Add documentation on how to run server
-- [ ] Add documentation on installing dependecies. 
+ - [ ] More advanced UI with React
+- [X] Add documentation on how to run server
+- [X] Add documentation on installing dependecies. 
