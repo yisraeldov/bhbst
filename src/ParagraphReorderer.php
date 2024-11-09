@@ -4,5 +4,5 @@ namespace Bhbsd;
 
 interface ParagraphReorderer
 {
-    public function reoorder(string $paraph): string;
+    public function reorder(string $paraph): string;
 }
