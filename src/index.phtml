@@ -1,0 +1,20 @@
+<html>
+    <head>
+	<script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+    </head>
+    <body>
+	<?PHP foreach(['task1','task2'] as $task): ?>
+	<h2><?= $task ?></h2>
+	<form>
+	    <textarea name="data"
+		      hx-trigger="change,keyup changed delay:0.25s"
+		      hx-post="/?action=<?= $task ?>"
+		      hx-target="next #result" ></textarea>
+
+	    <i class="htmx-indicator">⏳ </i>
+
+	    <div id="result"></div>
+	</form>
+	<?PHP endforeach;?>
+    </body>
+</html>

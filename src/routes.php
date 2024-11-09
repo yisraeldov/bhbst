@@ -14,8 +14,9 @@ function makeReorderAction(ParagraphReorderer $reorderer)
 
 return [
     null => function () {
-        echo "default";
+        require "index.phtml";
     },
     'task1' => makeReorderAction(new ParagraphReordererByLen()),
     'task2' => makeReorderAction(new ParagraphReordererCustomAlapha())
 ];
+
