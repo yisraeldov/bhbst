@@ -36,7 +36,8 @@ commit messages, that was also used. All the code was written with out
 LLMs
 
 # TODO 
-- [ ] Add an API to call the methods
-- [ ] Make a simple UI
+- [X] Add an API to call the methods
+- [X] Make a simple UI
+ - [ ] Style the UI
 - [ ] Add documentation on how to run server
 - [ ] Add documentation on installing dependecies. 
