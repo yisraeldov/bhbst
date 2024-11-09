@@ -6,6 +6,7 @@ pkgs.stdenv.mkDerivation{
     phpPackages.composer
     phpactor
     onefetch
+    vscode-langservers-extracted
   ];
   name = "bhbsd";
 }
