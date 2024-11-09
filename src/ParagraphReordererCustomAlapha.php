@@ -2,7 +2,7 @@
 
 namespace Bhbsd;
 
-class ParagraphReordererCustomAlapha
+class ParagraphReordererCustomAlapha implements ParagraphReorderer
 {
     /**
      * @property

@@ -42,8 +42,4 @@ class ParagraphReordererByLen implements ParagraphReorderer
         usort($sentences, fn($a, $b)=> (strlen($a) < strlen($b)) ? -1 : 1);
         return $sentences;
     }
-
-    public function reoorder(string $paraph): string
-    {
-    }
 }
