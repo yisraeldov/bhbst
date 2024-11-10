@@ -4,13 +4,13 @@
 
 ## Nix
 
-If you want to use nix you can install [Nix](http://nixos.org) and then run `nix shell`
+If you want to use nix you can install [Nix](https://nixos.org/download/#download-nix) and then run `nix-shell`
 
 This will give all the tools and the PHP version that I have installed.
 
 ## Composer
 
-If you did not isntall nix, besure that composer is installed then 
+If you did not install nix, besure that composer is installed then 
 
 ``` shell
 composer i
