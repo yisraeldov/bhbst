@@ -48,18 +48,6 @@ Then visit the test server <http://localhost:8080>
 See the [test cases](./tests/)
 
 
-# AI Usuage disclosure.
-
-From the requirements:
-
-> Please do not use any AI tools like ChatGPT or Gemini, etc., but you
-> can use Google for search.
-
-I **did not** use any LLM tools for the coding. I did use LLM to
-translate the requirements document from PDF to Markdown for easier
-reading inside of IDE. I also have a plugin that uses LLM to suggest
-commit messages, that was also used. All the code was written with out
-LLMs
 
 # TODO 
 - [X] Add an API to call the methods
