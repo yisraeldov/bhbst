@@ -113,3 +113,23 @@ on the sum of the ASCII values of their characters.
 
 
 ---
+
+
+## Task 4: Memoize Decorator
+
+### Objective
+
+Enhance the performance of the PHP sorting functions that perform long
+or repeated calculations by implementing a **memoization** technique using
+the **decorator pattern**.
+
+### Instructions
+
+-   **Approach**:
+    -   **Decorator Pattern**: Use the decorator pattern to create a
+        wrapper around the function that needs memoization. This pattern
+        allows you to add memoization functionality without altering the
+        original function's code.
+    -   **Hashing**: Consider hashing complex inputs if necessary to
+        facilitate efficient lookups in the cache.
+
