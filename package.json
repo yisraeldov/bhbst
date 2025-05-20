@@ -1,0 +1,29 @@
+{
+  "name": "bhbsd",
+  "version": "0.0.1",
+  "description": "[![PHP](https://github.com/yisraeldov/bhbst/actions/workflows/php.yml/badge.svg)](https://github.com/yisraeldov/bhbst/actions/workflows/php.yml)[![HTMX](https://img.shields.io/badge/HTMX-36C?logo=htmx&logoColor=fff)](#)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yisrael Dov Lebow",
+  "license": "ISC",
+  "dependencies": {
+    "cherry-cljs": "^0.4.28"
+  },
+  "devDependencies": {
+    "cypress": "^14.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yisraeldov/bhbst.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yisraeldov/bhbst/issues"
+  },
+  "homepage": "https://github.com/yisraeldov/bhbst#readme"
+}

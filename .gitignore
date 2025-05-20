@@ -79,3 +79,4 @@ flycheck_*.el
 .direnv
 .envrc
 
+/node_modules/
