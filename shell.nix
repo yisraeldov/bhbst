@@ -21,6 +21,7 @@ pkgs.stdenv.mkDerivation{
     nodejs
     vscode-langservers-extracted
     cypress-newest
+    sqlite
   ];
   name = "bhbsd";
 }
