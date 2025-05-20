@@ -45,7 +45,7 @@ class ParagraphReordererCustomAlapha implements ParagraphReorderer
     /**
      * Splits a string into words, ignoring punctioation
      *
-     * @return string[]
+     * @return array<string>
      */
     private function split(string $paragraph): array
     {
@@ -70,6 +70,9 @@ class ParagraphReordererCustomAlapha implements ParagraphReorderer
         );
     }
 
+    /**
+     * Translates ASCII string to ordered hebrew equivilat characters
+     */
     private function transToHebOrderedChars(string $s): string
     {
         return strtr(strtoupper($s), $this->replacePairs);
