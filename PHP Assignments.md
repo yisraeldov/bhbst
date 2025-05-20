@@ -133,3 +133,12 @@ the **decorator pattern**.
     -   **Hashing**: Consider hashing complex inputs if necessary to
         facilitate efficient lookups in the cache.
 
+## Task 5: Add a counter that counts usage.
+
+Add a counter next to each input box that shows the number of
+**words** entered into that box.
+
+## Task 6: Add a persistent storage to count usage.
+
+We want to track each time a sort API method was called. We want to
+track the `IP`,`Date and Time`,`Method called`.
