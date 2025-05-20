@@ -1,5 +1,10 @@
 [![PHP](https://github.com/yisraeldov/bhbst/actions/workflows/php.yml/badge.svg)](https://github.com/yisraeldov/bhbst/actions/workflows/php.yml)[![HTMX](https://img.shields.io/badge/HTMX-36C?logo=htmx&logoColor=fff)](#)
 
+Please see [Assignement Details](./Assignment.md), part of has already
+been done, feel free to improve on what was already completed, but
+keep the same ideas and tools.
+
+
 # Install
 
 ## Nix
@@ -45,7 +50,7 @@ Then visit the test server <http://localhost:8080>
 	$reorderedText = $reorder->reorder($originalText);
 ```
 
-See the [test cases](./tests/)
+See the [test cases](./tests/) and [E2E Tests](./cypress/e2e/)
 
 
 
