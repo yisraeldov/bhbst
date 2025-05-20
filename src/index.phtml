@@ -1,6 +1,10 @@
 <html>
     <head>
 	<script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel" src="/js/counter.js"></script>
     </head>
     <body>
 	<?PHP foreach(['task1','task2'] as $task): ?>
@@ -16,5 +20,6 @@
 	    <div id="result"></div>
 	</form>
 	<?PHP endforeach;?>
+	<div id="counter"></div>
     </body>
 </html>
