@@ -1,16 +1,13 @@
-Here's the content from the PDF in Markdown format:
-
----
-
 # PHP Assignments
 
 ## General Implementation Requirements
 
 - **Programming Language**: Please use PHP to write the functions (free online PHP editor).
-- **No AI Usage**: Please do not use any AI tools like ChatGPT or Gemini, etc., but you can use Google for search.
-- **Clean Code**: Ensure that your code is clean, modular, and easy to read. Avoid redundant code, and include comments where necessary to explain logic (but don’t overdo it).
-- **Optimize for Readability and Efficiency**: Use efficient data structures that optimize for both clarity and performance.
-
+- **No AI Usage**: Please do not use any AI tools like ChatGPT or
+  Gemini, etc., but you can use Google for search. Or use if you want. 
+- **Clean Code**: Ensure that your code is clean, modular, and easy to read.
+- **Optimize for Readability and Efficiency**: Use efficient data structures that optimize for both clarity .
+- **Well tested** Make sure that everything works.
 ---
 
 ## Task 1: Reorder Sentences in a Paragraph by Custom Length Order
@@ -58,5 +55,61 @@ Write a function that accepts a paragraph and reorders all words according to th
 **Result:**
 
 > “a a a adding across ball barking brightly brown big grassy day distance dog happily high This The the the The the to yellow Nearby shining scene sun playing perfect It cat chased curious excitedly from field for jumped outside watched was was warmth”
+
+---
+
+---
+## Task 3: 
+
+Write a function that orders words by the sum of the ascii value of
+their characters.
+
+## Task 3: Order Words by ASCII Value Sum
+
+### Objective
+
+Write a function that accepts a paragraph and orders all words based
+on the sum of the ASCII values of their characters.
+
+### Instructions
+
+-   **Input & Output Requirements**
+    -   **Input**: A single paragraph (string) consisting of multiple
+        words. Words may include punctuation, which should be removed
+        in the result.
+    -   **Output**: A string with words ordered by the sum of the
+        ASCII values of their characters, in ascending order. Do not
+        treat uppercase and lowercase letters as the same value, as
+        ASCII values differ for uppercase and lowercase
+        characters. Ensure that the punctuation is removed from the
+        result, and only the words are reordered based on the ASCII
+        values.
+
+### Example
+
+**Given the paragraph:**
+
+> "Wow, the quick brown fox jumps over 13 lazy dogs!"
+
+1.  Remove punctuation: "Wow the quick brown fox jumps over 13 lazy
+    dogs"
+2.  Calculate the ASCII sum for each word:
+    -   Wow: W(87) + o(111) + w(119) = 317
+    -   the: t(116) + h(104) + e(101) = 321
+    -   quick: q(113) + u(117) + i(105) + c(99) + k(107) = 541
+    -   brown: b(98) + r(114) + o(111) + w(119) + n(110) = 552
+    -   fox: f(102) + o(111) + x(120) = 333
+    -   jumps: j(106) + u(117) + m(109) + p(112) + s(115) = 559
+    -   over: o(111) + v(118) + e(101) + r(114) = 444
+    -   13: 1(49) + 3(51) = 100
+    -   lazy: l(108) + a(97) + z(122) + y(121) = 448
+    -   dogs: d(100) + o(111) + g(103) + s(115) = 429
+3.  Order the words by their ASCII sums:
+    -   "13 Wow fox the over lazy dogs quick brown jumps"
+
+**Result:**
+
+> "13 Wow fox the over lazy dogs quick brown jumps"
+
 
 ---
